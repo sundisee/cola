@@ -16,7 +16,7 @@ env.hosts=['ucloud2','ucloud1','ucloud3']
 def local_commit():
     with lcd('/var/web/qyer/nutspider/cola/'):
         local('git add fbcola.py')
-        local('git commit -m "fb" ')
+        local('git commit -m "fb"')
         local('git pull origin')
         local('git push origin')
 
