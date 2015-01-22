@@ -5,12 +5,12 @@ job:
   mode: url # also can be `bundle`
   size: 100   # the destination (including bundle or url) size
   limit: 0  # 0 means no restrictions, if greater than 0, means webpages opened per minute.
-  master_port: 12106
+  master_port: 11103
   port: 12107
   instances: 2
   mongo:
     host: 10.6.26.182
-    port: 27017
+    port: 8000
   patterns:
     - regex: http://blog.sina.com.cn/$
       name: home

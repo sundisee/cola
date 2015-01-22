@@ -48,11 +48,18 @@ def task3():
     with cd('/var/web/qyer/nutspider/'):
         run('git clone git@github.com:sundisee/cola.git')
 
+#ucloud pull
+@roles('ucloud1','ucloud2','ucloud3')
+def task4():
+    with cd('/var/web/qyer/nutspider/cola/'):
+        run('git pull')
+
 def dotask():
     # execute(local_commit)
     # execute(task1)
-    execute(task2)
+    # execute(task2)
     # execute(task3)
+    execute(task4)
 
 if __name__ == '__main__':
     dotask()
