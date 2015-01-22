@@ -7,7 +7,7 @@ job:
   port: 12103
   instances: 2
   mongo:
-    host: localhost
+    host: 10.6.26.182
     port: 27017
   starts:
     - url: http://en.wikipedia.org/wiki/Python
